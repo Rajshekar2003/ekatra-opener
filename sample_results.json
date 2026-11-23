@@ -1,27 +1,32 @@
 [
   {
     "url": "https://stripe.com",
-    "status": "model_failed",
-    "reason": "Set GEMINI_API_KEY"
+    "status": "ok",
+    "hook_quote": "embed payments in your platform",
+    "opener": "Stripe provides tools to embed payments in your platform.\nI'd guess managing the edge cases of these financial flows creates a messy backlog for your engineering team.\nWhat is the biggest friction point when you embed these features?"
   },
   {
     "url": "https://posthog.com",
-    "status": "model_failed",
-    "reason": "Set GEMINI_API_KEY"
+    "status": "ok",
+    "hook_quote": "PostHog automatically diagnoses problems, fixes bugs, and generates pull requests",
+    "opener": "PostHog automatically diagnoses problems, fixes bugs, and generates pull requests.\nMy guess is that having an automated system create pull requests might occasionally lead to unexpected code changes in your repository.\nWhat is your process for reviewing each of these generated pull requests?"
   },
   {
     "url": "https://linear.app",
-    "status": "model_failed",
-    "reason": "Set GEMINI_API_KEY"
+    "status": "ok",
+    "hook_quote": "Build and deploy AI agents that work alongside you",
+    "opener": "Linear lets you build and deploy AI agents that work alongside you.\nMy guess is that managing these agents often leads to inconsistent output across your team.\nWhat is the biggest hurdle when integrating these agents into your current workflow?"
   },
   {
     "url": "https://notion.so",
-    "status": "model_failed",
-    "reason": "Set GEMINI_API_KEY"
+    "status": "ok",
+    "hook_quote": "Build Custom Agents",
+    "opener": "Notion allows teams to Build Custom Agents for their internal workflows.\nMy guess is that keeping these agents aligned with evolving team processes takes a lot of time.\nCould you tell me more about how you manage these agents?"
   },
   {
     "url": "https://vercel.com",
-    "status": "model_failed",
-    "reason": "Set GEMINI_API_KEY"
+    "status": "ok",
+    "hook_quote": "Run Python backends, queues, and daemons on Vercel",
+    "opener": "Vercel allows developers to run Python backends, queues, and daemons alongside their frontend.\nMy guess is that managing the state between these different components gets messy as you scale.\nWhat is your preferred way to monitor these Python backends?"
   }
 ]

@@ -1,0 +1,5 @@
+https://stripe.com
+https://posthog.com
+https://linear.app
+https://notion.so
+https://vercel.com
