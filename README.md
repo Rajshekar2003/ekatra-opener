@@ -20,3 +20,14 @@ Model name can be changed: `export LLM_MODEL=<model-name>`.
 ## At 1,000 runs a day
 About 2M input and 0.12M output tokens. Cost = tokens x your model's price (check the current price page). Cache hits cost nothing.
 Breaks first: JavaScript-only or bot-blocked sites, API rate limits, thin sites. Next fixes: a queue with a rate limiter and a headless-browser fallback.
+
+Windows PowerShell: use `$env:GEMINI_API_KEY="your_key"` instead of `export`.
+
+## Sample output
+`sample_results.json` has real results for 5 company sites (made with `urls.txt`).
+
+## Known limits
+- The word-for-word check proves the quoted detail is on the page. It does not prove the meaning is right. Early on, one run credited a customer quote on a site to the company itself. The prompt now says to use only what the company itself does. A second model pass that checks meaning is the next step.
+- Line 2 of each opener is a guess about a problem, not a fact.
+- Sites that need JavaScript to show text, or that block bots, return `needs_human` or `fetch_failed`.
+- It only drafts text. It never sends email.
