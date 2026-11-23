@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://stripe.com",
+    "status": "ok",
+    "hook_quote": "process payments outside of the iOS and Android app stores",
+    "opener": "You provide tools to process payments outside of the iOS and Android app stores.\nI'd guess that managing the technical compliance for these direct billing flows creates significant overhead.\nAre you currently helping developers navigate the specific regulatory requirements for those alternative payment paths?",
+    "cached": true
+  },
+  {
+    "url": "https://posthog.com",
+    "status": "model_failed",
+    "reason": "Set GEMINI_API_KEY"
+  },
+  {
+    "url": "https://linear.app",
+    "status": "model_failed",
+    "reason": "Set GEMINI_API_KEY"
+  },
+  {
+    "url": "https://notion.so",
+    "status": "model_failed",
+    "reason": "Set GEMINI_API_KEY"
+  },
+  {
+    "url": "https://vercel.com",
+    "status": "model_failed",
+    "reason": "Set GEMINI_API_KEY"
+  }
+]
