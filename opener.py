@@ -24,17 +24,20 @@ MAX_PAGE_CHARS = 6000          # about 1.5k tokens sent to the model
 MAX_BYTES = 1_500_000
 UA = "Mozilla/5.0 (compatible; OpenerBot/1.0)"
 BANNED = ["i came across", "i hope this finds", "i noticed that you", "impressive", "game-changer",
-          "revolutioniz", "cutting-edge", "synergy", "\u2014", "\u2013"]
+          "revolutioniz", "cutting-edge", "synergy", "significant overhead", "constant challenge", "are you currently looking", "\u2014", "\u2013"]
 
 SYSTEM = """You write the first 3 lines of a cold email to a startup founder.
 You are given text scraped from the company's website. Rules:
 1. Use ONLY facts present in the text. Never invent customers, numbers, funding or news.
-2. Pick ONE specific detail (a product, a claim, a customer type, a recent change).
+2. Pick ONE specific detail about what the COMPANY ITSELF makes or does. Never use a customer quote,
+   testimonial or logo as the detail, and never describe a customer's product as the company's.
    Copy a short exact phrase of it (max 12 words) into "hook_quote". It must appear word for word in the text.
 3. Write exactly 3 lines, each under 25 words:
-   Line 1: mention that specific detail, plainly, no flattery.
-   Line 2: one honest guess at a problem that detail creates, worded as a guess ("I'd guess...").
-   Line 3: one easy, low-pressure question.
+   Line 1: state that detail plainly, with the company as the subject. No flattery.
+   Line 2: one specific problem that detail might create, worded clearly as a guess (start with "I'd guess" or "My guess is"), never as a fact.
+   Do not use the words "significant", "overhead" or "challenge".
+   Line 3: one easy, low-pressure question that reuses a word from the detail.
+   Do not start it with "Are you currently" or "How do you"; vary the wording.
 4. Plain words. No hype, no em dashes, no "I came across", no "I hope this finds you well".
 5. If the text is too thin or generic to find a real detail, set "insufficient": true and leave lines empty.
 Return JSON only: {"hook_quote": str, "lines": [str,str,str], "insufficient": bool}"""

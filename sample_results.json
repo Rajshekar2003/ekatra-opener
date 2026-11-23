@@ -1,33 +1,27 @@
 [
   {
     "url": "https://stripe.com",
-    "status": "ok",
-    "hook_quote": "process payments outside of the iOS and Android app stores",
-    "opener": "You provide tools to process payments outside of the iOS and Android app stores.\nI'd guess that managing the technical compliance for these direct billing flows creates significant overhead.\nAre you currently helping developers navigate the specific regulatory requirements for those alternative payment paths?",
-    "cached": true
+    "status": "model_failed",
+    "reason": "Set GEMINI_API_KEY"
   },
   {
     "url": "https://posthog.com",
-    "status": "ok",
-    "hook_quote": "PostHog automatically diagnoses problems, fixes bugs, and generates pull requests",
-    "opener": "PostHog automatically diagnoses problems, fixes bugs, and generates pull requests.\nI'd guess that managing the accuracy of these automated pull requests takes significant oversight.\nAre you currently reviewing every generated pull request before merging?"
+    "status": "model_failed",
+    "reason": "Set GEMINI_API_KEY"
   },
   {
     "url": "https://linear.app",
-    "status": "ok",
-    "hook_quote": "workflows shared by humans and agents",
-    "opener": "You built Linear to support workflows shared by humans and agents.\nI'd guess that managing the handoff between AI agents and human developers creates significant coordination overhead.\nAre you currently looking for ways to track agent performance alongside human output?"
+    "status": "model_failed",
+    "reason": "Set GEMINI_API_KEY"
   },
   {
     "url": "https://notion.so",
-    "status": "ok",
-    "hook_quote": "Resolve support tickets in Slack",
-    "opener": "You offer a way to resolve support tickets in Slack.\nI'd guess keeping those automated responses accurate without human oversight is a constant challenge.\nAre you currently looking for ways to improve your agent accuracy?"
+    "status": "model_failed",
+    "reason": "Set GEMINI_API_KEY"
   },
   {
     "url": "https://vercel.com",
-    "status": "ok",
-    "hook_quote": "Notion powers millions of agent conversations daily on Vercel",
-    "opener": "Notion powers millions of agent conversations daily on Vercel.\nI'd guess managing the latency and reliability of those agent interactions at that scale is a constant challenge.\nAre you currently looking for ways to optimize the performance of those agent-driven workflows?"
+    "status": "model_failed",
+    "reason": "Set GEMINI_API_KEY"
   }
 ]
